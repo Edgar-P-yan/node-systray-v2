@@ -1,55 +1,77 @@
 {
-  "name": "systray",
-  "version": "1.0.5",
-  "description": "An systray libray for nodejs",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "name": "node-systray-v2",
+  "version": "2.0.0",
+  "description": "A cross-platform systray library for node.js with precompiled binaries.",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "module": "dist/index.esm.js",
+  "exports": {
+    ".": [
+      {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.cjs",
+        "default": "./dist/index.js"
+      },
+      "./dist/index.js"
+    ]
+  },
   "scripts": {
-    "build": "run-s clean build:lib doc && git add -A",
-    "build:lib": "tsc",
-    "clean": "del ./lib/**",
-    "lint": "tslint ./src/** --type-check -p ./tsconfig.json",
-    "test": "cross-env DEBUG=systray* mocha -r ts-node/register ./test/**/*.test.ts",
-    "doc": "typedoc --theme minimal --out ./docs ./src && touch ./docs/.nojekyll",
-    "cover": "cross-env NODE_ENV=development nyc ava",
-    "preversion": "npm run build && git add -A"
+    "doc": "typedoc src/index.ts",
+    "test": "jest",
+    "lint": "eslint \"*/**/*.{ts,js,json}\"",
+    "lint:fix": "eslint \"*/**/*.{ts,js,json}\" --fix",
+    "build": "rimraf dist && rollup --config ./rollup.config.mjs",
+    "prepublishOnly": "npm run doc && npm run lint && npm run test && npm run build"
   },
-  "engines": {
-    "node": ">=4.0.0"
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.0.1",
+    "@types/chai": "^4.3.4",
+    "@types/debug": "^0.0.30",
+    "@types/eslint": "^8.4.10",
+    "@types/fs-extra": "^4.0.2",
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.18.0",
+    "@types/prettier": "^2.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.3.1",
+    "prettier": "^2.8.1",
+    "rimraf": "^5.0.5",
+    "rollup": "^2.79.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "ts-jest": "^29.0.3",
+    "ts-jest-resolver": "^2.0.0",
+    "ts-node": "^10.9.1",
+    "typedoc": "0.23.23",
+    "typedoc-plugin-markdown": "3.14.0",
+    "typescript": "^4.9.4"
   },
-  "pre-commit": [],
+  "files": [
+    "dist/",
+    "types/",
+    "traybin/"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zaaack/node-systray.git"
+    "url": "git+https://github.com/Edgar-P-Yan/node-systray-v2.git"
   },
   "keywords": [
     "systray",
     "tray",
     "gui"
   ],
-  "author": "zaaack",
+  "author": {
+    "name": "Edgar Pogosyan"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zaaack/node-systray/issues"
+    "url": "https://github.com/Edgar-P-Yan/node-systray-v2/issues"
   },
-  "homepage": "https://github.com/zaaack/node-systray#readme",
-  "devDependencies": {
-    "@types/debug": "^0.0.30",
-    "@types/fs-extra": "^4.0.2",
-    "@types/mocha": "^5.2.0",
-    "@types/node": "^10.0.4",
-    "cross-env": "^5.0.5",
-    "del-cli": "^1.1.0",
-    "mocha": "^5.1.1",
-    "npm-run-all": "^4.0.2",
-    "nyc": "^11.2.1",
-    "pre-commit": "^1.2.2",
-    "ts-node": "^6.0.2",
-    "tslint": "^5.7.0",
-    "tslint-config-standard": "^6.0.1",
-    "typedoc": "^0.8.0",
-    "typescript": "^2.8.3"
-  },
+  "homepage": "https://github.com/Edgar-P-Yan/node-systray-v2#readme",
   "dependencies": {
     "debug": "^3.0.1",
     "fs-extra": "^4.0.2"
