@@ -8,12 +8,12 @@ runs:
       with:
         node-version: '16.x'
         cache: 'npm'
-        cache-dependency-path: '**/package-lock.json'
+        cache-dependency-path: '**/yarn.lock'
 
     - name: 'Keep npm cache for future workflows'
       uses: 'actions/cache@v3'
       with:
-        key: "${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}"
+        key: "${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}"
         path: '~/.npm'
         restore-keys: |
           ${{ runner.os }}-node-

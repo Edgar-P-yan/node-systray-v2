@@ -18,7 +18,6 @@ jobs:
       - name: 'Execute the lint script'
         run: 'npm run lint'
 
-
   test:
     name: 'Run unit tests with Jest'
     runs-on: 'ubuntu-latest'
