@@ -16,7 +16,7 @@ jobs:
         uses: './.github/actions/setup'
 
       - name: 'Execute the lint script'
-        run: 'npm run lint'
+        run: 'yarn lint'
 
   test:
     name: 'Run unit tests with Jest'
@@ -29,10 +29,10 @@ jobs:
         uses: './.github/actions/setup'
 
       - name: 'Execute the test script'
-        run: 'npm run test'
+        run: 'yarn test'
 
   bundle:
-    name: 'Bundle package with Rollup.js'
+    name: 'Bundle package'
     runs-on: 'ubuntu-latest'
     steps:
       - name: 'Checkout the repository'
@@ -42,4 +42,4 @@ jobs:
         uses: './.github/actions/setup'
 
       - name: 'Execute the build script'
-        run: 'npm run build'
+        run: 'yarn build'
