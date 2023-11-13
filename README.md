@@ -27,11 +27,6 @@ npm install --save node-systray-v2
 yarn add node-systray-v2
 ```
 
-## TODO
-- Add more examples and docs with screenshots
-- Submenus, dividers, fixes, most of which can be taken from awesome but now unmaintained fork [felixhao28/node-systray](https://github.com/felixhao28/node-systray)
-- Write some tests (maybe even e2e)
-
 ## Preview
 Source code of this preview is at [./examples/preview/](./examples/preview/).
 
@@ -100,6 +95,11 @@ Take a look at the [examples](./examples).
 ## API Documentation
 
 [Documentation generated from source files by Typedoc](./docs/README.md).
+
+## TODO
+- Add more examples and docs with screenshots
+- Submenus, dividers, fixes, most of which can be taken from awesome but now unmaintained fork [felixhao28/node-systray](https://github.com/felixhao28/node-systray)
+- Write some tests (maybe even e2e)
 
 ## License
 
