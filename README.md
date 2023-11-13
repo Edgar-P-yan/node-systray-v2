@@ -21,10 +21,10 @@ It picks and uses precompiled executables under the hood based on what OS it's r
 ## Installation
 
 ```sh
-npm install --save node-systray-v2
+npm install --save https://github.com/Edgar-P-yan/node-systray-v2
 
 # For Yarn, use the command below.
-yarn add node-systray-v2
+yarn add https://github.com/Edgar-P-yan/node-systray-v2
 ```
 
 ## Preview
