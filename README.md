@@ -13,7 +13,10 @@
 [![NPM Badge](https://badge.fury.io/js/node-systray-v2.svg)](https://badge.fury.io/js/node-systray-v2)
 [![install size](https://packagephobia.com/badge?p=node-systray-v2)](https://packagephobia.com/result?p=node-systray-v2)
 
-`node-systray-v2` is a cross-platform systray library for node.js with precompiled binaries. It is a successor of the now unmaintained library [node-systray](https://github.com/zaaack/node-systray).
+`node-systray-v2` is a very simple cross-platform systray library for node.js with precompiled binaries. It is a successor of the now unmaintained library [node-systray](https://github.com/zaaack/node-systray).
+It picks and uses precompiled executables under the hood based on what OS it's running on and communicates with them through stdin/stdout, so it works just out of the box.
+
+✨ **No need to compile ANYTHING. No headaces with those native addons, compilation or anything like that. Just add the module and use.**
 
 ## Installation
 
@@ -23,6 +26,11 @@ npm install --save node-systray-v2
 # For Yarn, use the command below.
 yarn add node-systray-v2
 ```
+
+## TODO
+- Add more examples and docs with screenshots
+- Submenus, dividers, fixes, most of which can be taken from awesome but now unmaintained fork [felixhao28/node-systray](https://github.com/felixhao28/node-systray)
+- Write some tests (maybe even e2e)
 
 ## Preview
 Source code of this preview is at [./examples/preview/](./examples/preview/).
