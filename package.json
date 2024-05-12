@@ -17,7 +17,8 @@
   },
   "scripts": {
     "doc": "typedoc src/index.ts",
-    "test": "jest test/auto",
+    "test": "jest test/e2e test/unit",
+    "test:unit": "jest test/unit",
     "lint": "eslint \"*/**/*.{ts,js,json}\"",
     "lint:fix": "eslint \"*/**/*.{ts,js,json}\" --fix",
     "build": "rimraf dist && rollup --config ./rollup.config.mjs",
@@ -65,7 +66,9 @@
     "gui"
   ],
   "author": {
-    "name": "Edgar Pogosyan"
+    "name": "Edgar Pogosyan",
+    "email": "edgar.pogosyan.a@gmail.com",
+    "url": "https://github.com/Edgar-P-Yan"
   },
   "license": "MIT",
   "bugs": {

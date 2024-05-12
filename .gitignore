@@ -7,20 +7,14 @@
 # Node.js modules.
 node_modules/
 
-# NPM's shrinkwrap.
-# We're using `package-lock.json` instead.
+# NPM's lockfile, Plug'n'Play, folder and settings.
+# We're using yarn, and it provides its lockfile and settings.
+.pnp.*
+package-lock.json
 npm-shrinkwrap.json
 
-# Yarn's lockfile, Plug'n'Play, folder and settings.
-# We're using npm, and it provides its lockfile and settings.
-yarn.lock
-.pnp.*
-.yarn/
-.yarnrc
-.yarnrc.yaml
-
 # pnpm's lockfile, workspace definitions and hooks.
-# We're using npm, and it provides its lockfile and settings.
+# We're using yarn, and it provides its lockfile and settings.
 pnpm-lock.yaml
 pnpm-workspace.yaml
 pnpmfile.js

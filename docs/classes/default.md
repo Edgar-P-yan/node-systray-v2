@@ -81,7 +81,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[src/index.ts:129](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L129)
+[src/index.ts:85](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L85)
 
 ## Properties
 
@@ -91,7 +91,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[src/index.ts:127](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L127)
+[src/index.ts:83](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L83)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:124](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L124)
+[src/index.ts:80](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L80)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:125](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L125)
+[src/index.ts:81](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L81)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:126](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L126)
+[src/index.ts:82](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L82)
 
 ___
 
@@ -201,7 +201,7 @@ node_modules/@types/node/events.d.ts:404
 
 #### Defined in
 
-[src/index.ts:221](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L221)
+[src/index.ts:177](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L177)
 
 ___
 
@@ -215,7 +215,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:217](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L217)
+[src/index.ts:173](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L173)
 
 ## Methods
 
@@ -237,7 +237,7 @@ ___
 
 #### Inherited from
 
-EventEmitter.\_\_@captureRejectionSymbol@128
+EventEmitter.\_\_@captureRejectionSymbol@72
 
 #### Defined in
 
@@ -422,7 +422,7 @@ Removed parameter `exitNode` that automatically killed nodejs process when systr
 
 #### Defined in
 
-[src/index.ts:201](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L201)
+[src/index.ts:157](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L157)
 
 ___
 
@@ -600,7 +600,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:158](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L158)
+[src/index.ts:114](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L114)
 
 ___
 
@@ -620,7 +620,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:210](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L210)
+[src/index.ts:166](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L166)
 
 ___
 
@@ -640,7 +640,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:206](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L206)
+[src/index.ts:162](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L162)
 
 ___
 
@@ -660,7 +660,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:147](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L147)
+[src/index.ts:103](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L103)
 
 ___
 
@@ -1012,7 +1012,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:177](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L177)
+[src/index.ts:133](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L133)
 
 ___
 
@@ -1067,7 +1067,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:169](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L169)
+[src/index.ts:125](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L125)
 
 ___
 

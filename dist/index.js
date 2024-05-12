@@ -9,12 +9,12 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var child = require('child_process');
-var path = require('path');
-var os = require('os');
-var fs = require('fs-extra');
 var events = require('events');
 var readline = require('readline');
 var Debug = require('debug');
+var path = require('path');
+var os = require('os');
+var fs = require('fs-extra');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -37,16 +37,15 @@ function _interopNamespace(e) {
 }
 
 var child__namespace = /*#__PURE__*/_interopNamespace(child);
+var readline__namespace = /*#__PURE__*/_interopNamespace(readline);
+var Debug__default = /*#__PURE__*/_interopDefaultLegacy(Debug);
 var path__namespace = /*#__PURE__*/_interopNamespace(path);
 var os__namespace = /*#__PURE__*/_interopNamespace(os);
 var fs__namespace = /*#__PURE__*/_interopNamespace(fs);
-var readline__namespace = /*#__PURE__*/_interopNamespace(readline);
-var Debug__default = /*#__PURE__*/_interopDefaultLegacy(Debug);
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const pkg = require('../package.json');
-const debug = Debug__default["default"]('systray');
-const getTrayBinPath = (debug = false, copyDir = false) => {
+function getTrayBinPath(debug = false, copyDir = false) {
     const binName = {
         win32: `tray_windows${debug ? '' : '_release'}.exe`,
         darwin: `tray_darwin${debug ? '' : '_release'}`,
@@ -68,7 +67,9 @@ const getTrayBinPath = (debug = false, copyDir = false) => {
         return copyDistPath;
     }
     return binPath;
-};
+}
+
+const debug = Debug__default["default"]('systray');
 const CHECK_STR = ' (√)';
 function updateCheckedInLinux(item) {
     if (process.platform !== 'linux') {

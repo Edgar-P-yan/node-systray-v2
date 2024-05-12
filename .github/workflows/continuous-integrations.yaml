@@ -29,7 +29,7 @@ jobs:
         uses: './.github/actions/setup'
 
       - name: 'Execute the test script'
-        run: 'yarn test'
+        run: 'yarn test:unit'
 
   bundle:
     name: 'Bundle package'

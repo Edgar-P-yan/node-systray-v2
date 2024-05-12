@@ -46,7 +46,7 @@ const systray = new SysTray({
       },
     ],
   },
-  debug: false,
+  debug: true,
   copyDir: true, // copy go tray binary to outside directory, useful for packing tool like pkg.
 });
 

@@ -5,17 +5,16 @@
  */
 
 import * as child from 'child_process';
-import * as path from 'path';
-import * as os from 'os';
-import * as fs from 'fs-extra';
 import { EventEmitter } from 'events';
 import * as readline from 'readline';
 import Debug from 'debug';
+import * as path from 'path';
+import * as os from 'os';
+import * as fs from 'fs-extra';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const pkg = require('../package.json');
-const debug = Debug('systray');
-const getTrayBinPath = (debug = false, copyDir = false) => {
+function getTrayBinPath(debug = false, copyDir = false) {
     const binName = {
         win32: `tray_windows${debug ? '' : '_release'}.exe`,
         darwin: `tray_darwin${debug ? '' : '_release'}`,
@@ -37,7 +36,9 @@ const getTrayBinPath = (debug = false, copyDir = false) => {
         return copyDistPath;
     }
     return binPath;
-};
+}
+
+const debug = Debug('systray');
 const CHECK_STR = ' (√)';
 function updateCheckedInLinux(item) {
     if (process.platform !== 'linux') {

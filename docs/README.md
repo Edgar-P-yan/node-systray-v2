@@ -29,7 +29,7 @@ node-systray-v2
 
 #### Defined in
 
-[src/index.ts:58](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L58)
+[src/index.ts:54](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L54)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:27](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L27)
+[src/index.ts:23](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L23)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:63](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L63)
+[src/index.ts:59](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L59)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L37)
+[src/index.ts:33](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L33)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:20](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L20)
+[src/index.ts:16](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L16)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:13](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L13)
+[src/index.ts:9](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L9)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:33](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L33)
+[src/index.ts:29](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L29)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:39](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L39)
+[src/index.ts:35](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L35)
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:45](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L45)
+[src/index.ts:41](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L41)
 
 ___
 
@@ -184,4 +184,4 @@ ___
 
 #### Defined in
 
-[src/index.ts:51](https://github.com/zaaack/node-systray/blob/ec3a387/src/index.ts#L51)
+[src/index.ts:47](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L47)

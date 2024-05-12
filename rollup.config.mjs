@@ -3,8 +3,7 @@
 import { readFile } from 'node:fs/promises';
 
 import typescript2 from 'rollup-plugin-typescript2';
-import json from "@rollup/plugin-json";
-
+import json from '@rollup/plugin-json';
 
 const packageJSON = JSON.parse(await readFile('./package.json', 'utf-8'));
 
@@ -62,7 +61,7 @@ const options = {
       useTsconfigDeclarationDir: true,
       tsconfig: './tsconfig.bundle.json',
     }),
-    json()
+    json(),
   ],
 };
 
