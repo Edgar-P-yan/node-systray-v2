@@ -2,9 +2,6 @@ import * as path from 'path';
 import * as os from 'os';
 import * as fs from 'fs-extra';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require('../package.json');
-
 export function getTrayBinPath(
   debug = false,
   copyDir: boolean | string = false,
@@ -26,6 +23,9 @@ export function getTrayBinPath(
   const binPath = path.resolve(`${__dirname}/../traybin/${binName}`);
 
   if (copyDir) {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const pkg = require('../package.json');
+
     copyDir = path.join(
       typeof copyDir === 'string'
         ? copyDir

@@ -43,8 +43,6 @@ var path__namespace = /*#__PURE__*/_interopNamespace(path);
 var os__namespace = /*#__PURE__*/_interopNamespace(os);
 var fs__namespace = /*#__PURE__*/_interopNamespace(fs);
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require('../package.json');
 function getTrayBinPath(debug = false, copyDir = false) {
     const binName = {
         win32: `tray_windows${debug ? '' : '_release'}.exe`,
@@ -56,6 +54,8 @@ function getTrayBinPath(debug = false, copyDir = false) {
     }
     const binPath = path__namespace.resolve(`${__dirname}/../traybin/${binName}`);
     if (copyDir) {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        const pkg = require('../package.json');
         copyDir = path__namespace.join(typeof copyDir === 'string'
             ? copyDir
             : `${os__namespace.homedir()}/.cache/node-systray/`, pkg.version);

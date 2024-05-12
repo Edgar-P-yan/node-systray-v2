@@ -12,8 +12,6 @@ import * as path from 'path';
 import * as os from 'os';
 import * as fs from 'fs-extra';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require('../package.json');
 function getTrayBinPath(debug = false, copyDir = false) {
     const binName = {
         win32: `tray_windows${debug ? '' : '_release'}.exe`,
@@ -25,6 +23,8 @@ function getTrayBinPath(debug = false, copyDir = false) {
     }
     const binPath = path.resolve(`${__dirname}/../traybin/${binName}`);
     if (copyDir) {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        const pkg = require('../package.json');
         copyDir = path.join(typeof copyDir === 'string'
             ? copyDir
             : `${os.homedir()}/.cache/node-systray/`, pkg.version);
