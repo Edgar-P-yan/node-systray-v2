@@ -1,4 +1,4 @@
-import SysTray, { ClickEvent } from './../../src/index';
+import { SysTray, ClickEvent } from './../../src/index';
 import { icoIconBase64 } from './../ico-icon';
 import { pngIconBase64 } from './../png-icon';
 

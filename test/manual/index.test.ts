@@ -1,7 +1,7 @@
 import * as os from 'os';
 import * as path from 'path';
 import * as assert from 'assert';
-import SysTray from '../../src/index';
+import { SysTray } from '../../src/index';
 import menu from '../menu.json';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const pkg = require('../../package.json');

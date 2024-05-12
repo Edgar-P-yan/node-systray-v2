@@ -76,7 +76,7 @@ function updateCheckedInLinux(item: MenuItem): MenuItem {
   return item;
 }
 
-export default class SysTray extends EventEmitter {
+export class SysTray extends EventEmitter {
   protected _conf: Conf;
   protected _process: child.ChildProcess;
   protected _rl: readline.ReadLine;

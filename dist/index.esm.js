@@ -139,5 +139,5 @@ class SysTray extends EventEmitter {
     }
 }
 
-export { SysTray as default };
+export { SysTray };
 //# sourceMappingURL=index.esm.js.map

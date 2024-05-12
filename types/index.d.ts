@@ -47,7 +47,7 @@ export type Conf = {
     debug?: boolean;
     copyDir?: boolean | string;
 };
-export default class SysTray extends EventEmitter {
+export declare class SysTray extends EventEmitter {
     protected _conf: Conf;
     protected _process: child.ChildProcess;
     protected _rl: readline.ReadLine;

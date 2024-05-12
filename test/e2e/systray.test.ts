@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import SysTray from '../../src';
+import { SysTray } from '../../src';
 import menu from '../menu.json';
 
 describe('Systray', () => {

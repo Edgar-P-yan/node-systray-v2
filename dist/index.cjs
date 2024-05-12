@@ -170,5 +170,5 @@ class SysTray extends events.EventEmitter {
     }
 }
 
-exports["default"] = SysTray;
+exports.SysTray = SysTray;
 //# sourceMappingURL=index.cjs.map
