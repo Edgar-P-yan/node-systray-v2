@@ -5,12 +5,20 @@
  */
 
 import * as child from 'child_process';
-import { EventEmitter } from 'events';
 import * as readline from 'readline';
-import Debug from 'debug';
 import * as path from 'path';
 import * as os from 'os';
 import * as fs from 'fs-extra';
+import { EventEmitter } from 'events';
+import xdebug from 'debug';
+// -- Shims --
+import cjsUrl from 'node:url';
+import cjsPath from 'node:path';
+import cjsModule from 'node:module';
+const __filename = cjsUrl.fileURLToPath(import.meta.url);
+const __dirname = cjsPath.dirname(__filename);
+const require = cjsModule.createRequire(import.meta.url);
+
 
 function getTrayBinPath(debug = false, copyDir = false) {
     const binName = {
@@ -21,7 +29,7 @@ function getTrayBinPath(debug = false, copyDir = false) {
     if (!binName) {
         throw new Error(`node-systray-v2: unsupported platform ${process.platform}.`);
     }
-    const binPath = path.resolve(`${__dirname}/../traybin/${binName}`);
+    const binPath = path.resolve(`${getDirName()}/../traybin/${binName}`);
     if (copyDir) {
         // eslint-disable-next-line @typescript-eslint/no-var-requires
         const pkg = require('../package.json');
@@ -37,8 +45,11 @@ function getTrayBinPath(debug = false, copyDir = false) {
     }
     return binPath;
 }
+const getDirName = (function getDirNameScope() {
+    return () => __dirname;
+})();
 
-const debug = Debug('systray');
+const debug = xdebug('systray');
 const CHECK_STR = ' (√)';
 function updateCheckedInLinux(item) {
     if (process.platform !== 'linux') {
@@ -111,13 +122,6 @@ class SysTray extends EventEmitter {
         this.writeLine(JSON.stringify(action));
         return this;
     }
-    /**
-     * Kill the systray process.
-     *
-     * ## Change notes:
-     * ### v2.0.0
-     * Removed parameter `exitNode` that automatically killed nodejs process when systray exitted.
-     */
     kill() {
         this._rl.close();
         this._process.kill();

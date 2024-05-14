@@ -2,8 +2,8 @@
 /// <reference types="node" />
 /// <reference types="node" />
 import * as child from 'child_process';
-import { EventEmitter } from 'events';
 import * as readline from 'readline';
+import { EventEmitter } from 'events';
 export type MenuItem = {
     title: string;
     tooltip: string;
@@ -57,13 +57,6 @@ export declare class SysTray extends EventEmitter {
     onClick(listener: (action: ClickEvent) => void): this;
     writeLine(line: string): this;
     sendAction(action: Action): this;
-    /**
-     * Kill the systray process.
-     *
-     * ## Change notes:
-     * ### v2.0.0
-     * Removed parameter `exitNode` that automatically killed nodejs process when systray exitted.
-     */
     kill(): void;
     onExit(listener: (code: number | null, signal: string | null) => void): void;
     onError(listener: (err: Error) => void): void;

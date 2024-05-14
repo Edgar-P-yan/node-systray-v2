@@ -1,10 +1,10 @@
 import * as child from 'child_process';
-import { EventEmitter } from 'events';
 import * as readline from 'readline';
-import Debug from 'debug';
 import { getTrayBinPath } from './get-tray-bin-path';
+import { EventEmitter } from 'events';
+import xdebug from 'debug';
 
-const debug = Debug('systray');
+const debug = xdebug('systray');
 
 export type MenuItem = {
   title: string;
@@ -147,13 +147,6 @@ export class SysTray extends EventEmitter {
     this.writeLine(JSON.stringify(action));
     return this;
   }
-  /**
-   * Kill the systray process.
-   *
-   * ## Change notes:
-   * ### v2.0.0
-   * Removed parameter `exitNode` that automatically killed nodejs process when systray exitted.
-   */
   kill(): void {
     this._rl.close();
     this._process.kill();

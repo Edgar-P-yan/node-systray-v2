@@ -20,7 +20,7 @@ export function getTrayBinPath(
     );
   }
 
-  const binPath = path.resolve(`${__dirname}/../traybin/${binName}`);
+  const binPath = path.resolve(`${getDirName()}/../traybin/${binName}`);
 
   if (copyDir) {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -44,3 +44,7 @@ export function getTrayBinPath(
 
   return binPath;
 }
+
+const getDirName = (function getDirNameScope() {
+  return () => __dirname;
+})();

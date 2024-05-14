@@ -9,12 +9,12 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var child = require('child_process');
-var events = require('events');
 var readline = require('readline');
-var Debug = require('debug');
 var path = require('path');
 var os = require('os');
 var fs = require('fs-extra');
+var events = require('events');
+var xdebug = require('debug');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -38,10 +38,10 @@ function _interopNamespace(e) {
 
 var child__namespace = /*#__PURE__*/_interopNamespace(child);
 var readline__namespace = /*#__PURE__*/_interopNamespace(readline);
-var Debug__default = /*#__PURE__*/_interopDefaultLegacy(Debug);
 var path__namespace = /*#__PURE__*/_interopNamespace(path);
 var os__namespace = /*#__PURE__*/_interopNamespace(os);
 var fs__namespace = /*#__PURE__*/_interopNamespace(fs);
+var xdebug__default = /*#__PURE__*/_interopDefaultLegacy(xdebug);
 
 function getTrayBinPath(debug = false, copyDir = false) {
     const binName = {
@@ -52,7 +52,7 @@ function getTrayBinPath(debug = false, copyDir = false) {
     if (!binName) {
         throw new Error(`node-systray-v2: unsupported platform ${process.platform}.`);
     }
-    const binPath = path__namespace.resolve(`${__dirname}/../traybin/${binName}`);
+    const binPath = path__namespace.resolve(`${getDirName()}/../traybin/${binName}`);
     if (copyDir) {
         // eslint-disable-next-line @typescript-eslint/no-var-requires
         const pkg = require('../package.json');
@@ -68,8 +68,11 @@ function getTrayBinPath(debug = false, copyDir = false) {
     }
     return binPath;
 }
+const getDirName = (function getDirNameScope() {
+    return () => __dirname;
+})();
 
-const debug = Debug__default["default"]('systray');
+const debug = xdebug__default["default"]('systray');
 const CHECK_STR = ' (√)';
 function updateCheckedInLinux(item) {
     if (process.platform !== 'linux') {
@@ -142,13 +145,6 @@ class SysTray extends events.EventEmitter {
         this.writeLine(JSON.stringify(action));
         return this;
     }
-    /**
-     * Kill the systray process.
-     *
-     * ## Change notes:
-     * ### v2.0.0
-     * Removed parameter `exitNode` that automatically killed nodejs process when systray exitted.
-     */
     kill() {
         this._rl.close();
         this._process.kill();
