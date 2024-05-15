@@ -18,6 +18,7 @@ import cjsModule from 'node:module';
 const __filename = cjsUrl.fileURLToPath(import.meta.url);
 const __dirname = cjsPath.dirname(__filename);
 const require = cjsModule.createRequire(import.meta.url);
+// -- End Shims --
 
 
 function getTrayBinPath(debug = false, copyDir = false) {
