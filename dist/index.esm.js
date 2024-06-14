@@ -8,7 +8,7 @@ import * as child from 'child_process';
 import * as readline from 'readline';
 import * as path from 'path';
 import * as os from 'os';
-import * as fs from 'fs-extra';
+import * as fs from 'fs';
 import { EventEmitter } from 'events';
 import xdebug from 'debug';
 // -- Shims --
@@ -39,8 +39,8 @@ function getTrayBinPath(debug = false, copyDir = false) {
             : `${os.homedir()}/.cache/node-systray/`, pkg.version);
         const copyDistPath = path.join(copyDir, binName);
         if (!fs.existsSync(copyDistPath)) {
-            fs.ensureDirSync(copyDir);
-            fs.copySync(binPath, copyDistPath);
+            fs.mkdirSync(copyDir, { recursive: true });
+            fs.copyFileSync(binPath, copyDistPath);
         }
         return copyDistPath;
     }

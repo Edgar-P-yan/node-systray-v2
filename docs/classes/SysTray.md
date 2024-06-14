@@ -1,73 +1,73 @@
-[node-systray-v2](../README.md) / default
+[node-systray-v2](../README.md) / SysTray
 
-# Class: default
+# Class: SysTray
 
 ## Hierarchy
 
 - `EventEmitter`
 
-  ↳ **`default`**
+  ↳ **`SysTray`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](default.md#constructor)
+- [constructor](SysTray.md#constructor)
 
 ### Properties
 
-- [\_binPath](default.md#_binpath)
-- [\_conf](default.md#_conf)
-- [\_process](default.md#_process)
-- [\_rl](default.md#_rl)
-- [captureRejectionSymbol](default.md#capturerejectionsymbol)
-- [captureRejections](default.md#capturerejections)
-- [defaultMaxListeners](default.md#defaultmaxlisteners)
-- [errorMonitor](default.md#errormonitor)
+- [\_binPath](SysTray.md#_binpath)
+- [\_conf](SysTray.md#_conf)
+- [\_process](SysTray.md#_process)
+- [\_rl](SysTray.md#_rl)
+- [captureRejectionSymbol](SysTray.md#capturerejectionsymbol)
+- [captureRejections](SysTray.md#capturerejections)
+- [defaultMaxListeners](SysTray.md#defaultmaxlisteners)
+- [errorMonitor](SysTray.md#errormonitor)
 
 ### Accessors
 
-- [binPath](default.md#binpath)
-- [killed](default.md#killed)
+- [binPath](SysTray.md#binpath)
+- [killed](SysTray.md#killed)
 
 ### Methods
 
-- [[captureRejectionSymbol]](default.md#[capturerejectionsymbol])
-- [addListener](default.md#addlistener)
-- [emit](default.md#emit)
-- [eventNames](default.md#eventnames)
-- [getMaxListeners](default.md#getmaxlisteners)
-- [kill](default.md#kill)
-- [listenerCount](default.md#listenercount)
-- [listeners](default.md#listeners)
-- [off](default.md#off)
-- [on](default.md#on)
-- [onClick](default.md#onclick)
-- [onError](default.md#onerror)
-- [onExit](default.md#onexit)
-- [onReady](default.md#onready)
-- [once](default.md#once)
-- [prependListener](default.md#prependlistener)
-- [prependOnceListener](default.md#prependoncelistener)
-- [rawListeners](default.md#rawlisteners)
-- [removeAllListeners](default.md#removealllisteners)
-- [removeListener](default.md#removelistener)
-- [sendAction](default.md#sendaction)
-- [setMaxListeners](default.md#setmaxlisteners)
-- [writeLine](default.md#writeline)
-- [addAbortListener](default.md#addabortlistener)
-- [getEventListeners](default.md#geteventlisteners)
-- [getMaxListeners](default.md#getmaxlisteners-1)
-- [listenerCount](default.md#listenercount-1)
-- [on](default.md#on-1)
-- [once](default.md#once-1)
-- [setMaxListeners](default.md#setmaxlisteners-1)
+- [[captureRejectionSymbol]](SysTray.md#[capturerejectionsymbol])
+- [addListener](SysTray.md#addlistener)
+- [emit](SysTray.md#emit)
+- [eventNames](SysTray.md#eventnames)
+- [getMaxListeners](SysTray.md#getmaxlisteners)
+- [kill](SysTray.md#kill)
+- [listenerCount](SysTray.md#listenercount)
+- [listeners](SysTray.md#listeners)
+- [off](SysTray.md#off)
+- [on](SysTray.md#on)
+- [onClick](SysTray.md#onclick)
+- [onError](SysTray.md#onerror)
+- [onExit](SysTray.md#onexit)
+- [onReady](SysTray.md#onready)
+- [once](SysTray.md#once)
+- [prependListener](SysTray.md#prependlistener)
+- [prependOnceListener](SysTray.md#prependoncelistener)
+- [rawListeners](SysTray.md#rawlisteners)
+- [removeAllListeners](SysTray.md#removealllisteners)
+- [removeListener](SysTray.md#removelistener)
+- [sendAction](SysTray.md#sendaction)
+- [setMaxListeners](SysTray.md#setmaxlisteners)
+- [writeLine](SysTray.md#writeline)
+- [addAbortListener](SysTray.md#addabortlistener)
+- [getEventListeners](SysTray.md#geteventlisteners)
+- [getMaxListeners](SysTray.md#getmaxlisteners-1)
+- [listenerCount](SysTray.md#listenercount-1)
+- [on](SysTray.md#on-1)
+- [once](SysTray.md#once-1)
+- [setMaxListeners](SysTray.md#setmaxlisteners-1)
 
 ## Constructors
 
 ### constructor
 
-• **new default**(`conf`)
+• **new SysTray**(`conf`)
 
 #### Parameters
 
@@ -81,7 +81,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[src/index.ts:85](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L85)
+[src/index.ts:85](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L85)
 
 ## Properties
 
@@ -91,7 +91,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[src/index.ts:83](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L83)
+[src/index.ts:83](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L83)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:80](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L80)
+[src/index.ts:80](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L80)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:81](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L81)
+[src/index.ts:81](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L81)
 
 ___
 
@@ -121,13 +121,13 @@ ___
 
 #### Defined in
 
-[src/index.ts:82](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L82)
+[src/index.ts:82](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L82)
 
 ___
 
 ### captureRejectionSymbol
 
-▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](default.md#capturerejectionsymbol)
+▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](SysTray.md#capturerejectionsymbol)
 
 #### Inherited from
 
@@ -171,7 +171,7 @@ ___
 
 ### errorMonitor
 
-▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](default.md#errormonitor)
+▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](SysTray.md#errormonitor)
 
 This symbol shall be used to install a listener for only monitoring `'error'`
 events. Listeners installed using this symbol are called before the regular
@@ -201,7 +201,7 @@ node_modules/@types/node/events.d.ts:404
 
 #### Defined in
 
-[src/index.ts:177](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L177)
+[src/index.ts:170](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L170)
 
 ___
 
@@ -215,7 +215,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:173](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L173)
+[src/index.ts:166](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L166)
 
 ## Methods
 
@@ -237,7 +237,7 @@ ___
 
 #### Inherited from
 
-EventEmitter.\_\_@captureRejectionSymbol@72
+EventEmitter.\_\_@captureRejectionSymbol@67
 
 #### Defined in
 
@@ -247,7 +247,7 @@ ___
 
 ### addListener
 
-▸ **addListener**(`eventName`, `listener`): [`default`](default.md)
+▸ **addListener**(`eventName`, `listener`): [`SysTray`](SysTray.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -264,7 +264,7 @@ v0.1.26
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Inherited from
 
@@ -386,7 +386,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](default.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](SysTray.md#defaultmaxlisteners).
 
 **`Since`**
 
@@ -410,19 +410,13 @@ ___
 
 ▸ **kill**(): `void`
 
-Kill the systray process.
-
-## Change notes:
-### v2.0.0
-Removed parameter `exitNode` that automatically killed nodejs process when systray exitted.
-
 #### Returns
 
 `void`
 
 #### Defined in
 
-[src/index.ts:157](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L157)
+[src/index.ts:150](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L150)
 
 ___
 
@@ -500,7 +494,7 @@ ___
 
 ### off
 
-▸ **off**(`eventName`, `listener`): [`default`](default.md)
+▸ **off**(`eventName`, `listener`): [`SysTray`](SysTray.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -517,7 +511,7 @@ v10.0.0
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Inherited from
 
@@ -531,7 +525,7 @@ ___
 
 ### on
 
-▸ **on**(`eventName`, `listener`): [`default`](default.md)
+▸ **on**(`eventName`, `listener`): [`SysTray`](SysTray.md)
 
 Adds the `listener` function to the end of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -572,7 +566,7 @@ v0.1.101
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Inherited from
 
@@ -586,7 +580,7 @@ ___
 
 ### onClick
 
-▸ **onClick**(`listener`): [`default`](default.md)
+▸ **onClick**(`listener`): [`SysTray`](SysTray.md)
 
 #### Parameters
 
@@ -596,11 +590,11 @@ ___
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Defined in
 
-[src/index.ts:114](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L114)
+[src/index.ts:114](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L114)
 
 ___
 
@@ -620,7 +614,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:166](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L166)
+[src/index.ts:159](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L159)
 
 ___
 
@@ -640,13 +634,13 @@ ___
 
 #### Defined in
 
-[src/index.ts:162](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L162)
+[src/index.ts:155](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L155)
 
 ___
 
 ### onReady
 
-▸ **onReady**(`listener`): [`default`](default.md)
+▸ **onReady**(`listener`): [`SysTray`](SysTray.md)
 
 #### Parameters
 
@@ -656,17 +650,17 @@ ___
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Defined in
 
-[src/index.ts:103](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L103)
+[src/index.ts:103](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L103)
 
 ___
 
 ### once
 
-▸ **once**(`eventName`, `listener`): [`default`](default.md)
+▸ **once**(`eventName`, `listener`): [`SysTray`](SysTray.md)
 
 Adds a **one-time**`listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -705,7 +699,7 @@ v0.3.0
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Inherited from
 
@@ -719,7 +713,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**(`eventName`, `listener`): [`default`](default.md)
+▸ **prependListener**(`eventName`, `listener`): [`SysTray`](SysTray.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -747,7 +741,7 @@ v6.0.0
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Inherited from
 
@@ -761,7 +755,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**(`eventName`, `listener`): [`default`](default.md)
+▸ **prependOnceListener**(`eventName`, `listener`): [`SysTray`](SysTray.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -787,7 +781,7 @@ v6.0.0
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Inherited from
 
@@ -856,7 +850,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`event?`): [`default`](default.md)
+▸ **removeAllListeners**(`event?`): [`SysTray`](SysTray.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -878,7 +872,7 @@ v0.1.26
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Inherited from
 
@@ -892,7 +886,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `listener`): [`default`](default.md)
+▸ **removeListener**(`eventName`, `listener`): [`SysTray`](SysTray.md)
 
 Removes the specified `listener` from the listener array for the event named`eventName`.
 
@@ -984,7 +978,7 @@ v0.1.26
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Inherited from
 
@@ -998,7 +992,7 @@ ___
 
 ### sendAction
 
-▸ **sendAction**(`action`): [`default`](default.md)
+▸ **sendAction**(`action`): [`SysTray`](SysTray.md)
 
 #### Parameters
 
@@ -1008,17 +1002,17 @@ ___
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Defined in
 
-[src/index.ts:133](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L133)
+[src/index.ts:133](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L133)
 
 ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`default`](default.md)
+▸ **setMaxListeners**(`n`): [`SysTray`](SysTray.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1039,7 +1033,7 @@ v0.3.5
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Inherited from
 
@@ -1053,7 +1047,7 @@ ___
 
 ### writeLine
 
-▸ **writeLine**(`line`): [`default`](default.md)
+▸ **writeLine**(`line`): [`SysTray`](SysTray.md)
 
 #### Parameters
 
@@ -1063,11 +1057,11 @@ ___
 
 #### Returns
 
-[`default`](default.md)
+[`SysTray`](SysTray.md)
 
 #### Defined in
 
-[src/index.ts:125](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L125)
+[src/index.ts:125](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L125)
 
 ___
 

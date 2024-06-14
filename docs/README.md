@@ -6,7 +6,7 @@ node-systray-v2
 
 ### Classes
 
-- [default](classes/default.md)
+- [SysTray](classes/SysTray.md)
 
 ### Type Aliases
 
@@ -29,7 +29,7 @@ node-systray-v2
 
 #### Defined in
 
-[src/index.ts:54](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L54)
+[src/index.ts:54](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L54)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:23](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L23)
+[src/index.ts:23](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L23)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:59](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L59)
+[src/index.ts:59](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L59)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:33](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L33)
+[src/index.ts:33](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L33)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:16](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L16)
+[src/index.ts:16](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L16)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:9](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L9)
+[src/index.ts:9](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L9)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:29](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L29)
+[src/index.ts:29](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L29)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:35](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L35)
+[src/index.ts:35](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L35)
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:41](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L41)
+[src/index.ts:41](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L41)
 
 ___
 
@@ -184,4 +184,4 @@ ___
 
 #### Defined in
 
-[src/index.ts:47](https://github.com/Edgar-P-yan/node-systray-v2/blob/ea28d05/src/index.ts#L47)
+[src/index.ts:47](https://github.com/Edgar-P-yan/node-systray-v2/blob/0098e9b/src/index.ts#L47)

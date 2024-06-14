@@ -1,6 +1,6 @@
 import * as path from 'path';
 import * as os from 'os';
-import * as fs from 'fs-extra';
+import * as fs from 'fs';
 
 export function getTrayBinPath(
   debug = false,
@@ -35,8 +35,8 @@ export function getTrayBinPath(
 
     const copyDistPath = path.join(copyDir, binName);
     if (!fs.existsSync(copyDistPath)) {
-      fs.ensureDirSync(copyDir);
-      fs.copySync(binPath, copyDistPath);
+      fs.mkdirSync(copyDir, { recursive: true });
+      fs.copyFileSync(binPath, copyDistPath);
     }
 
     return copyDistPath;

@@ -12,7 +12,7 @@ var child = require('child_process');
 var readline = require('readline');
 var path = require('path');
 var os = require('os');
-var fs = require('fs-extra');
+var fs = require('fs');
 var events = require('events');
 var xdebug = require('debug');
 
@@ -61,8 +61,8 @@ function getTrayBinPath(debug = false, copyDir = false) {
             : `${os__namespace.homedir()}/.cache/node-systray/`, pkg.version);
         const copyDistPath = path__namespace.join(copyDir, binName);
         if (!fs__namespace.existsSync(copyDistPath)) {
-            fs__namespace.ensureDirSync(copyDir);
-            fs__namespace.copySync(binPath, copyDistPath);
+            fs__namespace.mkdirSync(copyDir, { recursive: true });
+            fs__namespace.copyFileSync(binPath, copyDistPath);
         }
         return copyDistPath;
     }
